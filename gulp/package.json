@@ -1,0 +1,19 @@
+{
+  "name": "local-gulp-tasks",
+  "private": true,
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "Binyamin Aron Green (https://binyam.in)",
+  "license": "MIT",
+  "dependencies": {
+    "deepmerge": "^4.2.2",
+    "gray-matter": "^4.0.3",
+    "gulp-remark": "^9.0.0",
+    "liquidjs": "^9.25.0",
+    "plugin-error": "^1.0.1",
+    "remark-gfm": "^1.0.0",
+    "remark-html": "^13.0.1",
+    "through2": "^4.0.2",
+    "vinyl": "^2.2.1"
+  }
+}

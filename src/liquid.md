@@ -4,6 +4,8 @@
 
 ---
 
+<span>span</span>
+
 ## GitHub-flavored markdown (GFM)
 - ~~strikethrough~~
 - autolink (<https://binyam.in>)

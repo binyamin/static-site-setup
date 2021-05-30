@@ -7,15 +7,15 @@
 - _bug_: Something broke (if there's no workaround, it's also _core_) -->
 
 ### Backlog
-- `#feat` Use remark-rehype instead of remark-html (see [this readme note](https://github.com/remarkjs/remark-html))
 - `#core` Replace markdown-it plugins with [remark plugins](https://github.com/remarkjs/remark/blob/HEAD/doc/plugins.md) (or rehype, for html transforms)
 - `#feat` might want to use https://www.npmjs.com/package/gulp-newer
 - `#feat` Read "layout" frontmatter key when rendering liquid templates
 ### Complete
-- `#core` liquid layouts & includes
 - `#core` Parse file front-matter (html _and_ md)
 - `#core #internal` Gulpfile should differentiate by file-type
 - `#core` static assets pipeline
+- `#core` liquid layouts & includes
+- `#feat` Use remark-rehype instead of remark-html (see [this readme note](https://github.com/remarkjs/remark-html))
 
 ## Depends
 - [liquidjs](https://github.com/harttle/liquidjs/) for templating engine (see also [gulp-nunjucks](https://github.com/sindresorhus/gulp-nunjucks))

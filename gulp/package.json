@@ -11,8 +11,10 @@
     "gulp-remark": "^9.0.0",
     "liquidjs": "^9.25.0",
     "plugin-error": "^1.0.1",
+    "rehype-raw": "^5.1.0",
+    "rehype-stringify": "^8.0.0",
     "remark-gfm": "^1.0.0",
-    "remark-html": "^13.0.1",
+    "remark-rehype": "^8.1.0",
     "through2": "^4.0.2",
     "vinyl": "^2.2.1"
   }

@@ -29,16 +29,17 @@ function markup(cb) {
     })
     .pipe(frontmatter())
     .pipe(gulpIf(is("markdown"), remark()))
-    .pipe(layouts(path.resolve(config.input, "layouts")))
+    .pipe(layouts({
+        dir: path.resolve(config.input, "layouts"),
+        ext: ".html"
+    }))
     .pipe(liquid({
         root: [
-            path.resolve(config.input, "includes")
+            path.resolve(config.input, "includes"),
         ],
         extname: ".html"
     }))
-    .pipe(rename({
-        extname: ".html"
-    }))
+    .pipe(rename({ extname: ".html" }))
     .pipe(gulp.dest(config.output))
     cb();
 }

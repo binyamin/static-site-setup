@@ -46,8 +46,16 @@ function transformChunk(chunk, encoding, callback) {
 
 let ldir, ext;
 
-module.exports = function(layoutDir, extname=".html") {
-    ldir = layoutDir;
-    ext = extname;
+/**
+ *
+ * @param {Object} config
+ * @param {string} config.dir - path to the layout directory
+ * @param {string} [config.ext] - Used when the layout key is missing a file extension. (default: ".html")
+ * @returns
+ */
+
+module.exports = function(config) {
+    ldir = config.dir;
+    ext = config.ext || ".html";
     return through.obj(transformChunk)
 }

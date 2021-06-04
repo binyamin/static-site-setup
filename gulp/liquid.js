@@ -1,6 +1,5 @@
 const path = require("path");
 
-// const deepmerge = require("deepmerge");
 const { Liquid } = require('liquidjs');
 const PluginError = require("plugin-error");
 const through = require("through2");
@@ -24,6 +23,8 @@ function transformChunk(chunk, encoding, callback) {
         return;
     }
 
+    // We're done with plugin setup
+
     const engine = new Liquid(options)
 
     engine.parseAndRender(chunk.contents.toString(), chunk.data)
@@ -39,7 +40,7 @@ let options = {};
 
 /**
  *
- * @param {import("liquidjs/dist/liquid-options").LiquidOptions} opts
+ * @param {import("liquidjs/dist/liquid-options").LiquidOptions} opts standard liquidjs options
  */
 module.exports = function(opts) {
     options = opts;

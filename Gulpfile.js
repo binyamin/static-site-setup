@@ -9,6 +9,7 @@ const gulpIf = require("gulp-if");
 
 // Custom gulp plugins
 const frontmatter = require("./gulp/frontmatter");
+const layouts = require("./gulp/layouts");
 const liquid = require("./gulp/liquid");
 const remark = require("./gulp/remark");
 
@@ -28,12 +29,12 @@ function markup(cb) {
     })
     .pipe(frontmatter())
     .pipe(gulpIf(is("markdown"), remark()))
+    .pipe(layouts(path.resolve(config.input, "layouts")))
     .pipe(liquid({
         root: [
-            path.resolve(config.input, "includes"),
-            path.resolve(config.input, "layouts"),
+            path.resolve(config.input, "includes")
         ],
-        extname: ".html",
+        extname: ".html"
     }))
     .pipe(rename({
         extname: ".html"

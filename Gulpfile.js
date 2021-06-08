@@ -23,19 +23,19 @@ function markup(cb) {
     gulp.src("**/*.{md,html}", {
         cwd: path.resolve(config.input),
         ignore: [
-            path.resolve(config.input, "layouts") + "/**/*",
-            path.resolve(config.input, "includes") + "/**/*"
+            path.resolve(config.input, "_layouts") + "/**/*",
+            path.resolve(config.input, "_includes") + "/**/*"
         ]
     })
     .pipe(frontmatter())
     .pipe(gulpIf(is("markdown"), remark()))
     .pipe(layouts({
-        dir: path.resolve(config.input, "layouts"),
+        dir: path.resolve(config.input, "_layouts"),
         ext: ".html"
     }))
     .pipe(liquid({
         root: [
-            path.resolve(config.input, "includes"),
+            path.resolve(config.input, "_includes"),
         ],
         extname: ".html"
     }))

@@ -8,7 +8,7 @@
 
 ### Backlog
 - `#core` Replace markdown-it plugins with [remark plugins](https://github.com/remarkjs/remark/blob/HEAD/doc/plugins.md) (or rehype, for html transforms)
-- `#feat` might want to use https://www.npmjs.com/package/gulp-newer or gulp-changed
+- `#feat #internal` might want to use https://www.npmjs.com/package/gulp-newer or gulp-changed
 - `#feat` process scss
 - `#feat` allow for custom liquid filter/tags
 

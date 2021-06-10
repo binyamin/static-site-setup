@@ -15,8 +15,8 @@ const remark = require("./gulp/remark");
 
 const config = {
     input: "src",
-    copy: "public",
-    output: "dist"
+    copy: "static",
+    output: "out"
 }
 
 function markup(cb) {

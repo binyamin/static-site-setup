@@ -1,17 +1,19 @@
 const path = require("path");
 const gulp = require("gulp");
 const lazypipe = require("lazypipe");
-const {is} = require("./gulp/util");
+const {is} = require("./gulp/tasks/util");
+
+const tasks = require("./gulp/tasks");
 
 // Pre-defined gulp plugins
 const rename = require("gulp-rename");
 const gulpIf = require("gulp-if");
 
 // Custom gulp plugins
-const frontmatter = require("./gulp/frontmatter");
-const layouts = require("./gulp/layouts");
-const liquid = require("./gulp/liquid");
-const remark = require("./gulp/remark");
+const frontmatter = require("./gulp/plugins/front-matter");
+const layouts = require("./gulp/plugins/layouts-fm");
+const liquid = require("./gulp/plugins/liquid");
+const remark = require("./gulp/plugins/md-engine");
 
 const config = {
     input: "src",
@@ -44,11 +46,7 @@ function markup(cb) {
     cb();
 }
 
-function copy(cb) {
-    gulp.src("**/*", { cwd: path.resolve(config.copy) })
-    .pipe(gulp.dest(config.output))
-    cb();
-}
+const copy = tasks.copy(config.copy, config.output);
 
 module.exports = {
     'start': markup,

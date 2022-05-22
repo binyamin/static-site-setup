@@ -23,6 +23,14 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
+"@gulp-community/liquidjs@github:binyamin/gulp-liquidjs":
+  version "0.1.0"
+  resolved "https://codeload.github.com/binyamin/gulp-liquidjs/tar.gz/8bf29ec86b9e1e10cdb30ec8402f7740adac1607"
+  dependencies:
+    liquidjs "^9.28.5"
+    plugin-error "^1.0.1"
+    through2 "^4.0.2"
+
 "@types/hast@^2.0.0":
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/@types/hast/-/hast-2.3.1.tgz#b16872f2a6144c7025f296fb9636a667ebb79cd9"
@@ -1739,6 +1747,11 @@ liquidjs@^9.25.0:
   version "9.25.0"
   resolved "https://registry.yarnpkg.com/liquidjs/-/liquidjs-9.25.0.tgz#6975764b74827c81bc1363b5ca4e9bc1140b7bb6"
   integrity sha512-TIccrphsWN53fVF9G/wDaKD1cHaB097ULLf+FzxxqN2iyJjzp/Oe9xlFjZCR1ZrAeISusWSPg3r7Dg8BD2Uztg==
+
+liquidjs@^9.28.5:
+  version "9.28.5"
+  resolved "https://registry.yarnpkg.com/liquidjs/-/liquidjs-9.28.5.tgz#8d37d92058f5b0a260ef7649d8c416b625f604a2"
+  integrity sha512-K9mSxsAilSezwBtEUtaTpJy6cff3YLoBShyjNLExk5tk/rkygWBPJYWCoJIXKdKdXs/2M/WG3EXYU1ssAtSrsQ==
 
 load-json-file@^1.0.0:
   version "1.1.0"

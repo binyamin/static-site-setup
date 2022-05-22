@@ -12,7 +12,7 @@ const gulpIf = require("gulp-if");
 // Custom gulp plugins
 const frontmatter = require("./gulp/plugins/front-matter");
 const layouts = require("./gulp/plugins/layouts-fm");
-const liquid = require("./gulp/plugins/liquid");
+const liquid = require("@gulp-community/liquidjs");
 const remark = require("./gulp/plugins/md-engine");
 
 const config = {

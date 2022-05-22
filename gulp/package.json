@@ -9,7 +9,6 @@
     "deepmerge": "^4.2.2",
     "gray-matter": "^4.0.3",
     "gulp-remark": "^9.0.0",
-    "liquidjs": "^9.25.0",
     "plugin-error": "^1.0.1",
     "rehype-highlight": "^4.1.0",
     "rehype-raw": "^5.1.0",

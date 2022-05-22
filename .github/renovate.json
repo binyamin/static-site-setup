@@ -2,5 +2,19 @@
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
         "local>binyamin/.github:renovate-config"
+    ],
+    "packageRules": [
+        {
+            "description": "Don't update packages to ESM-only releases",
+            "matchPackageNames": [
+                "gulp-remark",
+                "remark"
+            ],
+            "matchPackagePrefixes": [
+                "remark-"
+            ],
+            "matchUpdateTypes": ["major"],
+            "enabled": false
+        }
     ]
 }

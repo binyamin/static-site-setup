@@ -8,10 +8,12 @@
             "description": "Don't update packages to ESM-only releases",
             "matchPackageNames": [
                 "gulp-remark",
-                "remark"
+                "remark",
+                "rehype"
             ],
             "matchPackagePrefixes": [
-                "remark-"
+                "remark-",
+                "rehype-"
             ],
             "matchUpdateTypes": ["major"],
             "enabled": false

@@ -1,5 +1,5 @@
 {
-  "name": "static-site-setup",
+  "name": "static-site-gulp",
   "private": true,
   "version": "0.1.0",
   "description": "A workflow for making static-sites, using gulpjs",
@@ -8,10 +8,10 @@
     "start": "gulp start",
     "build": "gulp build"
   },
-  "repository": "https://github.com/binyamin/static-site-setup.git",
+  "repository": "https://github.com/binyamin/static-site-gulp.git",
   "author": "Binyamin Aron Green (https://binyam.in)",
   "license": "MIT",
-  "homepage": "https://github.com/binyamin/static-site-setup#readme",
+  "homepage": "https://github.com/binyamin/static-site-gulp#readme",
   "dependencies": {
     "@gulp-community/liquidjs": "github:binyamin/gulp-liquidjs",
     "gulp": "^4.0.2",

@@ -4,7 +4,7 @@ specifiers:
   deepmerge: ^4.2.2
   gray-matter: ^4.0.3
   gulp-remark: ^9.0.0
-  plugin-error: ^1.0.1
+  plugin-error: ^2.0.1
   rehype-highlight: ^4.1.0
   rehype-raw: ^5.1.0
   rehype-stringify: ^8.0.0
@@ -17,7 +17,7 @@ dependencies:
   deepmerge: 4.2.2
   gray-matter: 4.0.3
   gulp-remark: 9.0.0
-  plugin-error: 1.0.1
+  plugin-error: 2.0.1
   rehype-highlight: 4.1.0
   rehype-raw: 5.1.0
   rehype-stringify: 8.0.0
@@ -849,6 +849,13 @@ packages:
       extend-shallow: 3.0.2
     dev: false
 
+  /plugin-error/2.0.1:
+    resolution: {integrity: sha512-zMakqvIDyY40xHOvzXka0kUvf40nYIuwRE8dWhti2WtjQZ31xAgBZBhxsK7vK3QbRXS1Xms/LO7B5cuAsfB2Gg==}
+    engines: {node: '>=10.13.0'}
+    dependencies:
+      ansi-colors: 1.1.0
+    dev: false
+
   /process-nextick-args/2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
     dev: false
@@ -1110,6 +1117,7 @@ packages:
   /unified/9.2.1:
     resolution: {integrity: sha512-juWjuI8Z4xFg8pJbnEZ41b5xjGUWGHqXALmBZ3FC3WX0PIx1CZBIIJ6mXbYMcf6Yw4Fi0rFUTA1cdz/BglbOhA==}
     dependencies:
+      '@types/unist': 2.0.3
       bail: 1.0.5
       extend: 3.0.2
       is-buffer: 2.0.5

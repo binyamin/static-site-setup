@@ -16,7 +16,7 @@
     "remark-gfm": "^1.0.0",
     "remark-rehype": "^8.1.0",
     "through2": "^4.0.2",
-    "vinyl": "^2.2.1"
+    "vinyl": "^3.0.0"
   },
   "peerDependencies": {
     "gulp": "^4.0.2"
